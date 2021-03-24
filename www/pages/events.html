@@ -1,0 +1,276 @@
+<template>
+  <div class="page page-discount page-with-subnavbar" data-name="events">
+    <div class="navbar navbar-dark no-hairline no-shadow">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Назад</span>
+          </a>
+        </div>
+        <div class="title">Мероприятия</div>
+        <div class="right">
+          <a href="#" class="link popup-open" data-popup=".popup-filter">
+            <span class="ios-only">События</span>
+            <i class="icon settings"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <form class="searchbar no-hairline">
+      <div class="searchbar-inner circe">
+        <div class="searchbar-input-wrap">
+          <input type="search" placeholder="Поиск по названию или #">
+          <i class="searchbar-icon"></i>
+          <span class="input-clear-button"></span>
+        </div>
+        <span class="searchbar-disable-button">Отмена</span>
+      </div>
+    </form>
+    <div class="page-content">
+      <div class="searchbar-backdrop"></div>
+
+      <div class="subnavbarCurrent no-shadow no-hairline dark-subvanar">
+        <div class="subnavbar-inner">
+          <div class="segmented segmented-raised">
+            <a href="#tab1" class="button tab-link tab-link-active">Предстоящие</a>
+            <a href="#tab2" class="button tab-link">Архив</a>
+            <a class="button link popup-open" data-popup=".popup-calendar">
+              <i class="icon calendar-icon"></i>
+              <span>Календарь</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab tab-active" id="tab1">
+          <div class="container-wrapper">
+
+            <div class="row event-list">
+
+              <div class="col-50 news-block-small">
+                <a href="/event-detail/1/" class="item-link">
+                  <div class="event-image">
+                    <img src="img/event-item-1.png" alt="">
+                  </div>
+                  <div class="block-context circe">
+                    <span class="block-context-text white-color">Концерт группы Серебро</span>
+                    <div class="ditail-contant-title__wrapper">
+                      <span class="block-context-large white-color">06.07</span>
+                      <span class="price-tag">400 ₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-50 news-block-small">
+                <a href="/event-detail/2/" class="item-link">
+                  <div class="event-image">
+                    <img src="img/event-item-2.png" alt="">
+                  </div>
+                  <div class="block-context circe">
+                    <span class="block-context-text white-color">Спектакль «Три сестры» в МХТ имени А. П. Чехова </span>
+                    <div class="ditail-contant-title__wrapper">
+                      <span class="block-context-large white-color">06.07</span>
+                      <span class="price-tag">1500 ₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-50 news-block-small">
+                <a href="/event-detail/3/" class="item-link">
+                  <div class="event-image">
+                    <img src="img/event-item-1.png" alt="">
+                  </div>
+                  <div class="block-context circe">
+                    <span class="block-context-text white-color">Концерт группы Серебро</span>
+                    <div class="ditail-contant-title__wrapper">
+                      <span class="block-context-large white-color">06.07</span>
+                      <span class="price-tag">400 ₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-50 news-block-small">
+                <a href="/event-detail/4/" class="item-link">
+                  <div class="event-image">
+                    <img src="img/event-item-2.png" alt="">
+                  </div>
+                  <div class="block-context circe">
+                    <span class="block-context-text white-color">Спектакль «Три сестры» в МХТ имени А. П. Чехова </span>
+                    <div class="ditail-contant-title__wrapper">
+                      <span class="block-context-large white-color">06.07</span>
+                      <span class="price-tag">1500 ₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-50 news-block-small">
+                <a href="/event-detail/5/" class="item-link">
+                  <div class="event-image">
+                    <img src="img/event-item-1.png" alt="">
+                  </div>
+                  <div class="block-context circe">
+                    <span class="block-context-text white-color">Концерт группы Серебро</span>
+                    <div class="ditail-contant-title__wrapper">
+                      <span class="block-context-large white-color">06.07</span>
+                      <span class="price-tag">400 ₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-50 news-block-small">
+                <a href="/event-detail/6/" class="item-link">
+                  <div class="event-image">
+                    <img src="img/event-item-2.png" alt="">
+                  </div>
+                  <div class="block-context circe">
+                    <span class="block-context-text white-color">Спектакль «Три сестры» в МХТ имени А. П. Чехова </span>
+                    <div class="ditail-contant-title__wrapper">
+                      <span class="block-context-large white-color">06.07</span>
+                      <span class="price-tag">1500 ₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="tab" id="tab2">
+        </div>
+
+        <!-- <div class="tab" id="tab3">
+            <div id="tab-calendar-inline-container" class="dark-calendar"></div>
+        </div> -->
+      </div>
+
+      <div class="main-blocks">
+        <div class="main-block__heading main-block__heading-com">
+          <span class="block__heading-name white-color">Способы связи</span>
+        </div>
+        <div class="circe">
+          <span class="communication white-color">ул. Лесная, 20, с 09:00 до 22:00</span>
+          <span class="communication white-color">8 (800) 999 88 77 / depo@mail.ru</span>
+          <a href="/cv/" class="communication-link white-color">depomoskva.ru</a>
+          <button class="communication-btn white-color" type="button">Обратная связь</button>
+          <span class="communication-s white-color">Как добраться?</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="popup popup-filter">
+      <div class="block">
+        <a class="link popup-close close-modal-x" href="#"><i class="icon-x"></i></a>
+        <p class="popup-calendar-title">События</p>
+
+        <div class="row">
+          <div class="col-50">
+            <a href="#" class="link black-btn">Все</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="link black-btn">Лекции</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="link black-btn">Концерты</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="link black-btn">Выставки</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="link black-btn">Детские мероприятия</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="popup popup-calendar">
+      <div class="block">
+        <a class="link popup-close close-modal-x" href="#"><i class="icon-x"></i></a>
+        <p class="popup-calendar-title">Выберите дату</p>
+
+        <div class="subnavbar subnavbar-after-header no-shadow no-hairline">
+          <div class="subnavbar-inner">
+            <div class="segmented segmented-raised">
+              <a href="#mod1" class="button tab-link tab-link-active">Сегодня</a>
+              <a href="#mod2" class="button tab-link">Завтра</a>
+              <a href="#mod3" class="button tab-link">Выходные</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs">
+
+          <div class="tab tab-active calendar-tab" id="mod1">
+            <div class="block block-strong no-padding">
+              <div id="modal-calendar-inline-container"></div>
+            </div>
+          </div>
+          <div class="tab" id="mod2">
+            <p>tab2</p>
+          </div>
+
+          <div class="tab" id="mod3">
+            <p>tab3</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</template>
+<script>
+  return {
+    on: {
+      pageInit: function(e, page) {
+        var self = this;
+        var today = new Date();
+        var app = self.$app;
+        var $ = self.$;
+        // Inline with custom toolbar
+        var monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август' , 'Сентябрь' , 'Октябрь', 'Ноябрь', 'Декабрь'];
+
+        self.calendarInline = app.calendar.create({
+          containerEl: '#modal-calendar-inline-container',
+          dayNamesShort: app.data.dayNamesShort,
+          value: [new Date()],
+          renderToolbar: function() {
+            return '<div class="toolbar calendar-custom-toolbar no-shadow">' +
+              '<div class="toolbar-inner">' +
+              '<div class="left">' +
+              '<a href="#" class="link icon-only"><i class="icon icon-back-calendar"></i></a>' +
+              '</div>' +
+              '<div class="center"></div>' +
+              '<div class="right">' +
+              '<a href="#" class="link icon-only"><i class="icon icon-forward-calendar"></i></a>' +
+              '</div>' +
+              '</div>' +
+              '</div>';
+          },
+          on: {
+            init: function(c) {
+              $('.calendar-custom-toolbar .center').text(monthNames[c.currentMonth] + ', ' + c.currentYear);
+              $('.calendar-custom-toolbar .left .link').on('click', function() {
+                self.calendarInline.prevMonth();
+              });
+              $('.calendar-custom-toolbar .right .link').on('click', function() {
+                self.calendarInline.nextMonth();
+              });
+            },
+            monthYearChangeStart: function(c) {
+              $('.calendar-custom-toolbar .center').text(monthNames[c.currentMonth] + ', ' + c.currentYear);
+            }
+          }
+        });
+      },
+      pageBeforeRemove: function(e, page) {
+        var self = this;
+        self.calendarInline.destroy();
+      },
+    },
+  }
+</script>

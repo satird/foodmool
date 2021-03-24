@@ -1,0 +1,148 @@
+ <template>
+        <div class="page no-toolbar no-swipeback lk-registration" data-name="lkLogin">
+    <div class="page-content login-screen-content">
+        <div class="subnavbarCurrent subnavbar-after-header no-shadow no-hairline loginScreen-subnavbar">
+            <div class="subnavbar-inner">
+                <div class="login-screen-segmented segmented segmented-raised circe">
+                    <a href="#" class="login-btn-tab tab-link tab-link-active" data-tab=".tabLogin3">Регистрация</a>
+                    <a href="#" class="login-btn-tab tab-link" data-tab=".tabLogin4">Вход</a>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tab tabLogin tabLogin3 tab-active" id="">
+              <form>
+                  <div class="list">
+                      <ul>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                                  <div class="item-title item-label login-item">E-mail</div>
+                                  <div class="item-input-wrap">
+                                      <input type="email" id="userMail" class="input-with-value login-input-with-value">
+                                      <span class="input-clear-button"></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                                  <div class="item-title item-label login-item">Пароль</div>
+                                  <div class="item-input-wrap">
+                                      <input type="password" id="userPassword" class="input-with-value login-input-with-value">
+                                      <span class="input-clear-button"></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                              <a href="#" @click="signInEmail" class="login-dark-btn white-color link" data-id="2" type="button">Создать учетную запись</a>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="login-screen-context circe">
+                      <div class="login-block-footer">Мы отправим код подтверждения по SMS на номер телефона, который вы указали</div>
+                      <div class="info-contact-block circe">
+                          <a class="info-contact-block-site" href="/login-screen/">Зарегистрироваться по номеру телефона</a>
+                      </div>
+                      <div class="info-contact-block circe">
+                          <div class="info-contact-block-title">Регистрация с помощью соц. сетей</div>
+                          <div class="info-social-list">
+                              <a href="#" class="info-social-vk info-social-item">
+                                  <img src="./img/icon-vk.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-facebook info-social-item">
+                                  <img src="./img/icon-fb.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-google info-social-item">
+                                  <img src="./img/icon-g+.png" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+            </div>
+            <div class="tab tabLogin tabLogin4" id="">
+                            <form>
+                  <div class="list">
+                      <ul>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                                  <div class="item-title item-label login-item">E-mail / Телефон</div>
+                                  <div class="item-input-wrap">
+                                      <input type="text" id="email-tel" class="input-with-value login-input-with-value">
+                                      <span class="input-clear-button"></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                                  <div class="item-title item-label login-item">Пароль</div>
+                                  <div class="item-input-wrap">
+                                      <input type="password" id="userPassword" class="input-with-value login-input-with-value">
+                                      <span class="input-clear-button"></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                              <a href="#" @click="signIn2" class="login-dark-btn white-color link" data-id="2" type="button">Войти</a>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="login-screen-context circe">
+                      <div class="login-block-footer">Если вы создаёте учётную запись, вы автоматически соглашаетесь с <a href="#"> Политикой конфиденциальности</a></div>
+                      <div class="info-contact-block circe">
+                          <a class="info-contact-block-site tab-link" data-tab=".tabLogin2" href="#">Зарегистрироваться</a>
+                      </div>
+                      <div class="info-contact-block circe">
+                          <div class="info-contact-block-title">Регистрация с помощью соц. сетей</div>
+                          <div class="info-social-list">
+                              <a href="#" class="info-social-vk info-social-item">
+                                  <img src="./img/icon-vk.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-facebook info-social-item">
+                                  <img src="./img/icon-fb.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-google info-social-item">
+                                  <img src="./img/icon-g+.png" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+    </div>
+</div>
+        </template>
+<script>
+  return {
+    methods: {
+      signInEmail: function () {
+        var $ = this.$;
+        var app = this.$app;
+        var router = this.$router;
+        var mail = $('input#userMail').val();
+        var password = $('input#userPassword').val();
+        app.dialog.alert('Учётная запись успешно создана <br> Ваш e-mail:' + mail + '<br> Ваш пароль:' + password, function () {
+          app.loginScreen.close();
+          $$('#lk-main .lk-registration').remove();
+          router.navigate('/lk-main/');
+        })
+      },
+      signIn2: function () {
+        var $ = this.$;
+        var app = this.$app;
+        var router = this.$router;
+        var telNumber = $('input#telNumber1').val();
+        // var password = $('input#demo-password-2').val();
+        app.dialog.alert('Успешно вошли', function () {
+          app.loginScreen.close();
+          $$('#lk-main .lk-registration').remove();
+          router.navigate('/lk-main/');
+        })
+      }
+    }
+  }
+</script>

@@ -1,0 +1,135 @@
+<template>
+  <div class="page no-navbar no-swipeback" data-name="lkMain">
+    <div class="page-content">
+      <div class="lk-user-block circe">
+        <div class="lk-info-user__image">
+          <img src="img/lk-user.png">
+          <label class="download-image-container" style="display: block;"><input type="file" class="download-image" accept="image/*"></label>
+        </div>
+        <div class="lk-info-user__context">
+          <span class="lk-info-user-name">{{username}}</span>
+          <span class="lk-info-user-number">+7 916 666 77 88</span>
+        </div>
+      </div>
+      <div class="container-wrapper">
+
+<!--         <div class="bonus-card circe">
+          <div class="bonus-card__head">
+            <div class="bonus-card__head-left">
+              <span class="bonus-card-number white-color">500</span>
+            </div>
+            <div class="bonus-card__head-right">
+              <span class="bonus-card__head-top white-color">Бонусы</span>
+              <span class="bonus-card__head-title-bottom white-color">накоплено</span>
+            </div>
+          </div>
+          <div class="bonus-card__foot">
+            <p class="bonus-card__foot-text white-color">Бонусы начисляются за любые покупки в пределах ДЕПО. Бонусы можно потратить на любые предложения внутри приложения.</p>
+          </div>
+        </div> -->
+
+        <div class="list lk-list no-hairlines no-hairlines-between circe">
+          <ul>
+            <li>
+              <a href="/lk-data/" class="item-link item-content">
+                <div class="item-media"><i class="icon lk-user-icon"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">Мои данные</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/lk-address/" class="item-link item-content">
+                <div class="item-media"><i class="icon lk-pin-icon"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">Мои адреса</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/lk-delivery/" class="item-link item-content">
+                <div class="item-media"><i class="icon lk-delivery-truck-icon"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">Отстледить доставку</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/lk-promo/" class="item-link item-content">
+                <div class="item-media"><i class="icon lk-tag-icon"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">Активировать промокод</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="large-light-btn" href="/login-screen/">Выход</a>
+      </div>
+
+    </div>
+    <!-- <div class="popup popup-lk-login">
+      <div class="block">
+        <a class="link popup-close close-modal-x" href="#"><i class="icon-x"></i></a>
+        <p class="popup-calendar-title">Категории</p>
+
+        <div class="row">
+          <div class="col-50">
+            <a href="#" class="link black-btn">Все</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="link black-btn">Блюда</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="link black-btn">Продукты</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="link black-btn">Открытия</a>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+    <div class="login-screen" id="my-login-screen">
+    <div class="view">
+      <div class="page">
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title">My App</div>
+          <form>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" placeholder="Your username">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Your password">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul>
+                <li><a class="item-link list-button" href="#">Sign In</a></li>
+              </ul>
+              <div class="block-footer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a class="link login-screen-close" href="#">Close Login Screen</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</template>

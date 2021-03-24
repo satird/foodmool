@@ -1,0 +1,39 @@
+
+   [
+        {
+      "id": 1,
+            "colorBg": "purple-bg",
+           "picture": "./img/news-block-1.png",
+            "logo": "./img/buffalo-wild-wings-logo-1.png",
+            "title": "Item 1",
+            "note": "note 1",
+            "address": "address 1"
+        },
+        {
+      "id": 2,
+            "colorBg": "yellow-bg",
+            "picture": "./img/news-detail-banner.png",
+            "logo": "./img/buffalo-wild-wings-logo-1.png",
+            "title": "Item 2",
+            "note": "note 2",
+            "address": "address 2"
+        },
+        {
+      "id": 3,
+            "colorBg": "purple-bg",
+            "picture": "./img/news-block-1.png",
+            "logo": "./img/buffalo-wild-wings-logo-1.png",
+            "title": "Item 1",
+            "note": "note 1",
+            "address": "address 1"
+        },
+        {
+      "id": 4,
+            "colorBg": "yellow-bg",
+            "picture": "./img/news-detail-banner.png",
+            "logo": "./img/buffalo-wild-wings-logo-1.png",
+            "title": "Item 2",
+            "note": "note 2",
+            "address": "address 2"
+        }
+      ]

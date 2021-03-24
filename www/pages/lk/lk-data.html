@@ -1,0 +1,82 @@
+<template>
+  <div class="page" data-name="lkData">
+    <div class="navbar navbar-dark no-hairline no-shadow">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Назад</span>
+          </a>
+        </div>
+        <div class="title">Мои данные</div>
+      </div>
+    </div>
+    <div class="page-content">
+
+
+      <form class="list" id="my-form">
+        <ul>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <input type="text" name="name" placeholder="Имя">
+                </div>
+              </div>
+            </div>
+          </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <input type="number" name="name" placeholder="Номер телефона">
+                  </div>
+                </div>
+              </div>
+            </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <input type="email" name="email" placeholder="Эл. почта">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <select name="gender">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Push-уведомления</div>
+                <div class="item-after">
+                  <label class="toggle toggle-init">
+                    <input type="checkbox" name="toggle" value="yes"><i class="toggle-icon"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+      <div class="block-strong row">
+        <div class="col"><a class="button convert-form-to-data" href="#">Get Data</a></div>
+        <div class="col"><a class="button fill-form-from-data" href="#">Fill Form</a></div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</template>

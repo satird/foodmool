@@ -1,0 +1,203 @@
+<template>
+    <!-- <div class="page no-swipeback lk-registration" data-name="lkLogin">
+        <div class="navbar navbar-dark no-hairline no-shadow">
+          <div class="navbar-inner lk-navbar sliding">
+            <div class="title">Регистрация</div>
+                <div class="right">
+                  <a href="/login-screen-2/" class="link">
+                      <span class="lk-link-login">Вход</span>
+                    <i class="icon icon-forward-green"></i>
+                  </a>
+                </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <form action="./pages/form-send.html" method="GET" class="form-store-data form-ajax-submit-onchange" id="login-form">
+            <div class="list form-lk circe">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" placeholder="Ваше имя"></div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <input type="tel" name="telNumber" placeholder="Номер телефона"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content item-input">
+                        <div class="item-inner">
+                          <div class="item-input-wrap">
+                            <input type="email" name="email" placeholder="Эл. почта"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-input-wrap">
+                              <input type="date" placeholder="Дата рождения" name="date" value=""></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-input-wrap">
+                              <input type="password" name="password" placeholder="Пароль"></div>
+                            </div>
+                          </li>
+                          <li class="item-content item-input">
+                            <div class="item-inner">
+                              <div class="item-input-wrap">
+                                <input type="password" name="passwordRepeat" placeholder="Повторите пароль"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="list">
+                          <a class="large-light-btn" href="/lk-main/">Зарегистрироваться</a>
+                        </div>
+                      </form>
+                    </div>
+          </div> -->
+<div class="page no-toolbar no-swipeback lk-registration" data-name="lkLogin">
+    <div class="page-content login-screen-content">
+        <div class="subnavbarCurrent subnavbar-after-header no-shadow no-hairline loginScreen-subnavbar">
+            <div class="subnavbar-inner">
+                <div class="login-screen-segmented segmented segmented-raised circe">
+                    <a href="#tabLogin1" class="login-btn-tab tab-link tab-link-active">Регистрация</a>
+                    <a href="#tabLogin2" class="login-btn-tab tab-link">Вход</a>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tab tabLogin tab-active" id="tabLogin1">
+              <form>
+                  <div class="list">
+                      <ul>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                                  <div class="item-title item-label login-item">Номер телефона</div>
+                                  <div class="item-input-wrap">
+                                      <input type="tel" id="telNumber1" class="input-with-value login-input-with-value" value="+7">
+                                      <span class="input-clear-button"></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                              <a href="#" @click="signIn" class="login-dark-btn white-color link" data-id="2" type="button">Отправить SMS с кодом</a>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="login-screen-context circe">
+                      <div class="login-block-footer">Мы отправим код подтверждения по SMS на номер телефона, который вы указали</div>
+                      <div class="info-contact-block circe">
+                          <a class="info-contact-block-site" href="/login-screen-2/">Зарегистрироваться по E-mail</a>
+                      </div>
+                      <div class="info-contact-block circe">
+                          <div class="info-contact-block-title">Регистрация с помощью соц. сетей</div>
+                          <div class="info-social-list">
+                              <a href="#" class="info-social-vk info-social-item">
+                                  <img src="./img/icon-vk.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-facebook info-social-item">
+                                  <img src="./img/icon-fb.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-google info-social-item">
+                                  <img src="./img/icon-g+.png" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+            </div>
+            <div class="tab tabLogin" id="tabLogin2">
+                            <form>
+                  <div class="list">
+                      <ul>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                                  <div class="item-title item-label login-item">E-mail / Телефон</div>
+                                  <div class="item-input-wrap">
+                                      <input type="text" id="email-tel" class="input-with-value login-input-with-value">
+                                      <span class="input-clear-button"></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                                  <div class="item-title item-label login-item">Пароль</div>
+                                  <div class="item-input-wrap">
+                                      <input type="password" id="userPassword" class="input-with-value login-input-with-value">
+                                      <span class="input-clear-button"></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner circe">
+                              <a href="#" @click="signIn2" class="login-dark-btn white-color link" data-id="2" type="button">Войти</a>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="login-screen-context circe">
+                      <div class="login-block-footer">Если вы создаёте учётную запись, вы автоматически соглашаетесь с <a href="#"> Политикой конфиденциальности</a></div>
+                      <div class="info-contact-block circe">
+                          <a class="info-contact-block-site tab-link" data-tab=".tabLogin2" href="#">Зарегистрироваться</a>
+                      </div>
+                      <div class="info-contact-block circe">
+                          <div class="info-contact-block-title">Регистрация с помощью соц. сетей</div>
+                          <div class="info-social-list">
+                              <a href="#" class="info-social-vk info-social-item">
+                                  <img src="./img/icon-vk.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-facebook info-social-item">
+                                  <img src="./img/icon-fb.png" alt="">
+                              </a>
+                              <a href="#" class="info-social-google info-social-item">
+                                  <img src="./img/icon-g+.png" alt="">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+    </div>
+</div>
+        </template>
+<script>
+  return {
+    methods: {
+      signIn: function () {
+        var $ = this.$;
+        var app = this.$app;
+        var router = this.$router;
+        var telNumber = $('input#telNumber1').val();
+        // var password = $('input#demo-password-2').val();
+        app.dialog.alert('На ваш номер телефона: <br>' + telNumber + '<br> отправлена СМС', function () {
+          app.loginScreen.close();
+          $$('#lk-main .lk-registration').remove();
+          router.navigate('/lk-main/');
+        })
+      },
+      signIn2: function () {
+        var $ = this.$;
+        var app = this.$app;
+        var router = this.$router;
+        var telNumber = $('input#telNumber1').val();
+        // var password = $('input#demo-password-2').val();
+        app.dialog.alert('Успешно вошли', function () {
+          app.loginScreen.close();
+          $$('#lk-main .lk-registration').remove();
+          router.navigate('/lk-main/');
+        })
+      }
+    }
+  }
+</script>

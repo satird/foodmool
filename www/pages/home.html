@@ -1,0 +1,489 @@
+<template>
+  <div class="page no-navbar" data-name="home">
+      <div class="statusbar"></div>
+      <div class="page-content">
+
+            <div class="swiper-container main-top-slider swiper-init" data-touch-move-stop-propagation="false" data-delay="5000" data-autoplay="true" data-loop="true" data-speed="400">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main-top-slide">
+                          <div class="main-top-slide-context">
+                              <div class="main-top-slide-logo">
+                                  <img src="img/logo.png" alt="">
+                              </div>
+                              <span class="main-top-slide-title">Неделя томатов на рынке</span>
+                              <div class="main-top-slide-data-wrap circe">
+                                  <span class="main-top-slide-data-prefix">Только</span>
+                                  <span class="main-top-slide-data-title">01.10</span>
+                              </div>
+                          </div>
+                          <img src="img/tomats.png" class="main-top-slider-bg" alt="">
+                    </div>
+                    <div class="swiper-slide main-top-slide">
+                          <div class="main-top-slide-context">
+                              <div class="main-top-slide-logo">
+                                  <img src="img/logo.png" alt="">
+                              </div>
+                              <span class="main-top-slide-title">Пивной день на рынке</span>
+                              <div class="main-top-slide-data-wrap circe">
+                                  <span class="main-top-slide-data-prefix">Только</span>
+                                  <span class="main-top-slide-data-title">02.10</span>
+                              </div>
+                          </div>
+                          <img src="img/beer-slider.png" class="main-top-slider-bg" alt="">
+                    </div>
+                    <div class="swiper-slide main-top-slide">
+                          <div class="main-top-slide-context">
+                              <div class="main-top-slide-logo">
+                                  <img src="img/logo.png" alt="">
+                              </div>
+                              <span class="main-top-slide-title">Неделя сыров на рынке</span>
+                              <div class="main-top-slide-data-wrap circe">
+                                  <span class="main-top-slide-data-prefix">Только</span>
+                                  <span class="main-top-slide-data-title">03.10</span>
+                              </div>
+                          </div>
+                          <img src="img/markets-block.png" class="main-top-slider-bg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="main-blocks">
+                <div class="main-block__heading">
+                    <span class="block__heading-name white-color">Рестораны</span>
+                    <a href="javascript:void(0);" class="block__heading-link rest-click" title="">См. все <i class="next-arrow"></i></a>
+                </div>
+                <div class="swiper-container main-swiper-container swiper-init"  data-touch-move-stop-propagation="false" data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide block__item-rest">
+                              <a href="/rest-detail/1/" class="purple-bg block__link-slider">
+                                  <div class="block-image_large">
+                                      <img src="./img/markets-block.png" alt="">
+                                  </div>
+                                  <div class="block-context-wrap">
+                                      <div class="block-context__logo">
+                                          <img src="./img/buffalo-wild-wings-logo-1.png" alt="">
+                                      </div>
+                                      <div class="block-context__info circe">
+                                          <span class="block-context-title white-color">title1</span>
+                                          <span class="block-context-note white-color">note1</span>
+                                          <span class="block-context-address white-color">address1</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="swiper-slide block__item-rest">
+                              <a href="/rest-detail/2/" class="yellow-bg block__link-slider">
+                                  <div class="block-image_large">
+                                      <img src="./img/markets-block.png" alt="">
+                                  </div>
+                                  <div class="block-context-wrap">
+                                      <div class="block-context__logo">
+                                          <img src="./img/buffalo-wild-wings-logo-1.png" alt="">
+                                      </div>
+                                      <div class="block-context__info circe">
+                                          <span class="block-context-title white-color">title2</span>
+                                          <span class="block-context-note white-color">note2</span>
+                                          <span class="block-context-address white-color">address2</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="swiper-slide block__item-rest">
+                              <a href="/rest-detail/3/" class="yellow-bg block__link-slider">
+                                  <div class="block-image_large">
+                                      <img src="./img/markets-block.png" alt="">
+                                  </div>
+                                  <div class="block-context-wrap">
+                                      <div class="block-context__logo">
+                                          <img src="./img/buffalo-wild-wings-logo-1.png" alt="">
+                                      </div>
+                                      <div class="block-context__info circe">
+                                          <span class="block-context-title white-color">title3</span>
+                                          <span class="block-context-note white-color">note3</span>
+                                          <span class="block-context-address white-color">address3</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+            </div> -->
+
+            <div class="main-blocks">
+                <div class="main-block__heading">
+                    <span class="block__heading-name white-color">Рестораны</span>
+                    <a href="javascript:void(0);" class="block__heading-link rest-click" title="">См. все <i class="next-arrow"></i></a>
+                </div>
+               <div class="swiper-container main-swiper-container swiper-init" data-touch-move-stop-propagation="false"  data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                     <div class="swiper-wrapper">
+                         {{#each item}}
+                         <div class="swiper-slide block__item-rest">
+                             <a href="/rest-detail/{{id}}/" class="{{colorBg}} block__link-slider">
+                                 <div class="block-image_large">
+                                     <img src="{{picture}}" alt="">
+                                 </div>
+                                 <div class="block-context-wrap">
+                                     <div class="block-context__logo">
+                                         <img src="{{logo}}" alt="">
+                                     </div>
+                                     <div class="block-context__info circe">
+                                         <span class="block-context-title white-color">{{title}}</span>
+                                         <span class="block-context-note white-color">{{note}}</span>
+                                         <span class="block-context-address white-color">{{address}}</span>
+                                     </div>
+                                 </div>
+                             </a>
+                         </div>
+                         {{/each}}
+                     </div>
+                 </div>
+           </div>
+
+
+              <div class="main-blocks">
+                  <div class="main-block__heading">
+                      <a href="#" id="test-class" class="block__heading-name white-color">Мастер-классы</a>
+                      <a href="/home/" class="block__heading-link" title="">См. все <i class="next-arrow"></i></a>
+                  </div>
+                  <div class="swiper-container main-swiper-container swiper-init" data-touch-move-stop-propagation="false" data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block__item-small">
+                                <a href="/products/1/">
+                                    <div class="block-image">
+                                        <img src="./img/markets-block.png" alt="">
+                                    </div>
+                                    <div class="block-context circe">
+                                        <span class="block-context-text white-color">string1</span>
+                                        <span class="block-context-text white-color">string2</span>
+                                        <span class="block-context-large white-color">data</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide block__item-small">
+                                <a href="/products/2/">
+                                    <div class="block-image">
+                                      <img src="./img/markets-block.png" alt="">
+                                    </div>
+                                    <div class="block-context circe">
+                                        <span class="block-context-text white-color">string1</span>
+                                        <span class="block-context-text white-color">string2</span>
+                                        <span class="block-context-large white-color">data</span>
+                                    </div>
+                              </a>
+                            </div>
+                                  <div class="swiper-slide block__item-small">
+                                        <a href="/products/3/">
+                                            <div class="block-image">
+                                                <img src="./img/markets-block.png" alt="">
+                                            </div>
+                                            <div class="block-context circe">
+                                                <span class="block-context-text white-color">string1</span>
+                                                <span class="block-context-text white-color">string2</span>
+                                                <span class="block-context-large white-color">data</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                        </div>
+                    </div>
+              </div>
+
+
+
+
+              <div class="main-blocks">
+                  <div class="main-block__heading">
+                      <span class="block__heading-name white-color">Рыночные точки</span>
+                      <a href="/cv/" class="block__heading-link" title="">См. все <i class="next-arrow"></i></a>
+                  </div>
+                  <div class="swiper-container main-swiper-container swiper-init" data-touch-move-stop-propagation="false" data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block__item-rest">
+                              <a href="#" class=" block__link-slider white-bg">
+                                  <div class="block-image_large">
+                                      <img src="./img/markets-block.png" alt="">
+                                  </div>
+                                  <div class="block-context-wrap">
+                                      <div class="block-context__info circe">
+                                          <span class="block-context-title black-color">title</span>
+                                          <span class="block-context-note black-color">note</span>
+                                          <span class="block-context-address black-color">address</span>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                                <div class="swiper-slide block__item-rest">
+                                  <a href="#" class=" block__link-slider white-bg">
+                                      <div class="block-image_large">
+                                          <img src="./img/markets-block.png" alt="">
+                                      </div>
+                                      <div class="block-context-wrap">
+                                          <div class="block-context__info circe">
+                                              <span class="block-context-title black-color">title</span>
+                                              <span class="block-context-note black-color">note</span>
+                                              <span class="block-context-address black-color">address</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                                </div>
+                                    <div class="swiper-slide block__item-rest">
+                                      <a href="#" class=" block__link-slider white-bg">
+                                          <div class="block-image_large">
+                                              <img src="./img/markets-block.png" alt="">
+                                          </div>
+                                          <div class="block-context-wrap">
+                                              <div class="block-context__info circe">
+                                                  <span class="block-context-title black-color">title</span>
+                                                  <span class="block-context-note black-color">note</span>
+                                                  <span class="block-context-address black-color">address</span>
+                                              </div>
+                                          </div>
+                                      </a>
+                                    </div>
+                        </div>
+                    </div>
+              </div>
+
+
+              <div class="main-blocks">
+                  <div class="main-block__heading">
+                      <span class="block__heading-name white-color">Мероприятия</span>
+                      <a href="/events/" class="block__heading-link" title="">См. все <i class="next-arrow"></i></a>
+                  </div>
+                  <div class="swiper-container main-swiper-container swiper-init" data-touch-move-stop-propagation="false" data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block__item-small">
+                                <a href="/event-detail/1/">
+                                    <div class="block-image">
+                                        <img src="./img/markets-block.png" alt="">
+                                    </div>
+                                    <div class="block-context circe">
+                                        <span class="block-context-text white-color">string1</span>
+                                        <span class="block-context-text white-color">string2</span>
+                                        <span class="block-context-large white-color">data</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <div class="swiper-slide block__item-small">
+                                    <a href="/event-detail/2/">
+                                        <div class="block-image">
+                                            <img src="./img/markets-block.png" alt="">
+                                        </div>
+                                        <div class="block-context circe">
+                                            <span class="block-context-text white-color">string1</span>
+                                            <span class="block-context-text white-color">string2</span>
+                                            <span class="block-context-large white-color">data</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                    <div class="swiper-slide block__item-small">
+                                        <a href="/event-detail/3/">
+                                            <div class="block-image">
+                                                <img src="./img/markets-block.png" alt="">
+                                            </div>
+                                            <div class="block-context circe">
+                                                <span class="block-context-text white-color">string1</span>
+                                                <span class="block-context-text white-color">string2</span>
+                                                <span class="block-context-large white-color">data</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="main-blocks">
+                  <div class="main-block__heading">
+                      <span class="block__heading-name white-color">Акции</span>
+                      <a href="/discounts/" class="block__heading-link" title="">См. все <i class="next-arrow"></i></a>
+                  </div>
+                  <div class="swiper-container main-swiper-container swiper-init" data-touch-move-stop-propagation="false" data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block__item-rest">
+                              <a href="/discount-detail/1/" class="block__item-full">
+                                  <img src="./img/markets-block.png" alt="" class="block-img-bg">
+                                  <div class="block__item-full-context circe">
+                                      <span class="block-context-title white-color">title</span>
+                                      <span class="block-context-address white-color">note</span>
+                                      <div class="block-context-data-wrap circe">
+                                          <span class="block-context-data-prefix white-color">before</span>
+                                          <span class="block-context-data-title white-color">data</span>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                            <div class="swiper-slide block__item-rest">
+                              <a href="/discount-detail/1/" class="block__item-full">
+                                  <img src="./img/markets-block.png" alt="" class="block-img-bg">
+                                  <div class="block__item-full-context circe">
+                                      <span class="block-context-title white-color">title</span>
+                                      <span class="block-context-address white-color">note</span>
+                                      <div class="block-context-data-wrap circe">
+                                          <span class="block-context-data-prefix white-color">before</span>
+                                          <span class="block-context-data-title white-color">data</span>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                            <div class="swiper-slide block__item-rest">
+                              <a href="/discount-detail/1/" class="block__item-full">
+                                  <img src="./img/markets-block.png" alt="" class="block-img-bg">
+                                  <div class="block__item-full-context circe">
+                                      <span class="block-context-title white-color">title</span>
+                                      <span class="block-context-address white-color">note</span>
+                                      <div class="block-context-data-wrap circe">
+                                          <span class="block-context-data-prefix white-color">before</span>
+                                          <span class="block-context-data-title white-color">data</span>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+
+
+              <div class="main-blocks">
+                  <div class="main-block__heading">
+                      <span class="block__heading-name white-color">Новости</span>
+                      <a href="/news/" class="block__heading-link" title="">См. все <i class="next-arrow"></i></a>
+                  </div>
+                  <div class="swiper-container main-swiper-container swiper-init" data-touch-move-stop-propagation="false" data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block__item-small">
+                                <a href="/news-detail/1/">
+                                    <div class="block-image">
+                                        <img src="./img/markets-block.png" alt="">
+                                    </div>
+                                    <div class="block-context circe">
+                                        <span class="block-context-title white-color">string1</span>
+                                        <span class="block-context-text white-color">address</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <div class="swiper-slide block__item-small">
+                                    <a href="/news-detail/2/">
+                                        <div class="block-image">
+                                            <img src="./img/markets-block.png" alt="">
+                                        </div>
+                                        <div class="block-context circe">
+                                            <span class="block-context-title white-color">string1</span>
+                                            <span class="block-context-text white-color">address</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                    <div class="swiper-slide block__item-small">
+                                        <a href="/news-detail/3/">
+                                            <div class="block-image">
+                                                <img src="./img/markets-block.png" alt="">
+                                            </div>
+                                            <div class="block-context circe">
+                                                <span class="block-context-title white-color">string1</span>
+                                                <span class="block-context-text white-color">address</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                        </div>
+                    </div>
+              </div>
+
+
+              <div class="main-blocks">
+                  <div class="main-block__heading">
+                      <span class="block__heading-name white-color">Детям</span>
+                      <a href="/childs/" class="block__heading-link" title="">См. все <i class="next-arrow"></i></a>
+                  </div>
+                  <div class="swiper-container main-swiper-container swiper-init" data-touch-move-stop-propagation="false" data-space-between="20" data-slides-per-view="auto" data-free-mode="true">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block__item-rest">
+                              <a href="/childs-detail/1/" class="block__item-full">
+                                  <img src="./img/markets-block.png" alt="" class="block-img-bg">
+                                  <div class="block__item-full-context circe">
+                                      <span class="block-context-title white-color">title</span>
+                                      <div class="block-context-data-wrap circe">
+                                          <span class="block-context-data-prefix white-color">before</span>
+                                          <span class="block-context-data-title white-color">data</span>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                                <div class="swiper-slide block__item-rest">
+                                  <a href="/childs-detail/2/" class="block__item-full">
+                                      <img src="./img/markets-block.png" alt="" class="block-img-bg">
+                                      <div class="block__item-full-context circe">
+                                          <span class="block-context-title white-color">title</span>
+                                          <div class="block-context-data-wrap circe">
+                                              <span class="block-context-data-prefix white-color">before</span>
+                                              <span class="block-context-data-title white-color">data</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                                </div>
+                                    <div class="swiper-slide block__item-rest">
+                                      <a href="/childs-detail/3/" class="block__item-full">
+                                          <img src="./img/markets-block.png" alt="" class="block-img-bg">
+                                          <div class="block__item-full-context circe">
+                                              <span class="block-context-title white-color">title</span>
+                                              <div class="block-context-data-wrap circe">
+                                                  <span class="block-context-data-prefix white-color">before</span>
+                                                  <span class="block-context-data-title white-color">data</span>
+                                              </div>
+                                          </div>
+                                      </a>
+                                    </div>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="main-blocks">
+                  <div class="main-block__heading main-block__heading-com">
+                      <span class="block__heading-name white-color">Способы связи</span>
+                  </div>
+                  <div class="circe">
+                      <span class="communication white-color">ул. Лесная, 20, с 09:00 до 22:00</span>
+                      <span class="communication white-color">8 (800) 999 88 77 / depo@mail.ru</span>
+                      <a href="/cv/" class="communication-link white-color">depomoskva.ru</a>
+                      <button class="communication-btn white-color" type="button">Обратная связь</button>
+                      <span class="communication-s white-color">Как добраться?</span>
+                  </div>
+              </div>
+
+
+
+
+      </div>
+  </div>
+</template>
+<script>
+  return {
+    data: function () {
+      return {
+        // empty initial user data
+        item: null,
+      }
+    },
+    on: {
+      pageMounted: function () {
+        var self = this;
+        var app = self.$app;
+		self.$app.preloader.show();
+        app.request.json(self.$root.myVarRest, function (data) {
+          console.log(data);
+          self.$app.preloader.hide();
+          self.$setState({
+            item: data
+          });
+        });
+      },
+      pageInit: function () {
+          var swiper = app.swiper.create('.main-swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            touchMoveStopPropagation: false,
+            freeMode: true,
+            observer: true,
+            observeParents: true,
+        });
+      }
+    },
+  };
+</script>

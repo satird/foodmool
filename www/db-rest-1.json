@@ -1,0 +1,552 @@
+
+   [
+        {
+      "id": 40,
+            "logo": "logo-corner-40.png",
+            "rest": "Barceloneta Tapas Bar",
+           "concept": "Кухни мира",
+            "address": "Пушкина,42",
+            "kitchen": "Кухи мира",
+            "chif": "Вася"
+        },
+        {
+      "id": 35,
+            "logo": "logo-corner-35.png",
+            "rest": "Bistro by Ruski",
+            "concept": "Кухни мира",
+            "address": "Притыцкого,12",
+            "kitchen": "Индуская",
+            "chif": "Петя"
+        },
+        {
+      "id": 34,
+            "logo": "logo-corner-34.png",
+            "rest": "Bổ",
+            "concept": "Кухни мира",
+            "address": "Ольшевского,27",
+            "kitchen": "Белоруская",
+            "chif": "Коля"
+        },
+        {
+      "id": 21,
+            "logo": "logo-corner-21.png",
+            "rest": "Bright Israeli Grill",
+            "concept": "Кухни мира",
+            "address": "Голубево,9",
+            "kitchen": "Грузинская",
+            "chif": "Толя"
+        },
+        {
+      "id": 14,
+            "logo": "logo-corner-14.png",
+            "rest": "Buba by Sumosan",
+            "concept": "Рыба, суши",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 54,
+            "logo": "logo-corner-54.png",
+            "rest": "Buffalo’s",
+            "concept": "Мясо",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 83,
+            "logo": "logo-corner-83.png",
+            "rest": "Cheesemania",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 6,
+            "logo": "logo-corner-6.png",
+            "rest": "Chowder & Pie",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 55,
+            "logo": "logo-corner-55.png",
+            "rest": "Ciao Pasta & Pizza",
+            "concept": "Пицца, тесто",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 66,
+            "logo": "logo-corner-66.png",
+            "rest": "Crema",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 38,
+            "logo": "logo-corner-38.png",
+            "rest": "Edinorog Cafe",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 671,
+            "logo": "logo-corner-67.png",
+            "rest": "Farinarie",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 3,
+            "logo": "logo-corner-3.png",
+            "rest": "GOKOS",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 82,
+            "logo": "logo-corner-82.png",
+            "rest": "Greek Street",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 9,
+            "logo": "logo-corner-9.png",
+            "rest": "GRUPY",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 59,
+            "logo": "logo-corner-59.png",
+            "rest": "Inchoco Chocolate, Waffle & Crepe Bar",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 25,
+            "logo": "logo-corner-25.png",
+            "rest": "J’pan",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 24,
+            "logo": "logo-corner-24.png",
+            "rest": "K-Town Korean BBQ",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 200,
+            "logo": "logo-corner-kidsTime.png",
+            "rest": "Kids Time",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 33,
+            "logo": "logo-corner-33.png",
+            "rest": "Kritikos",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 19,
+            "logo": "logo-corner-19.png",
+            "rest": "Mac & Cheese",
+            "concept": "Пицца, тесто",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 202,
+            "logo": "logo-corner-p2.png",
+            "rest": "MACADAMIA Vitamin & Smoothie bar",
+            "concept": "Напитки",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 48,
+            "logo": "logo-corner-48.png",
+            "rest": "Meat Dealers",
+            "concept": "Мясо",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 84,
+            "logo": "logo-corner-84.png",
+            "rest": "Mollusca",
+            "concept": "Рыба, суши",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 65,
+            "logo": "logo-corner-65.png",
+            "rest": "Mon Bon",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 78,
+            "logo": "logo-corner-78.png",
+            "rest": "Raw to Go",
+            "concept": "Здоровая еда",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 47,
+            "logo": "logo-corner-47.png",
+            "rest": "Right Hops Bar + Bottle Shop",
+            "concept": "Напитки",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 85,
+            "logo": "logo-corner-85.png",
+            "rest": "RYBA International",
+            "concept": "Рыба, суши",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 43,
+            "logo": "logo-corner-43.png",
+            "rest": "SEBB’s Raw & Fire",
+            "concept": "Мясо",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 18,
+            "logo": "logo-corner-18.png",
+            "rest": "Shao Kao Chinese BBQ",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 26,
+            "logo": "logo-corner-26.png",
+            "rest": "Siam",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 77,
+            "logo": "logo-corner-77.png",
+            "rest": "Soul in the Bowl",
+            "concept": "Здоровая еда",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 80,
+            "logo": "logo-corner-80.png",
+            "rest": "Stall by Natalia Berezova",
+            "concept": "Здоровая еда",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 201,
+            "logo": "logo-corner-tangiersLounge.png",
+            "rest": "Tangiers Lounge",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 66,
+            "logo": "logo-corner-66.png",
+            "rest": "Tarterium",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 5,
+            "logo": "logo-corner-5.png",
+            "rest": "The Truffle",
+            "concept": "Пицца, тесто",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 56,
+            "logo": "logo-corner-56.png",
+            "rest": "Tsomi",
+            "concept": "Пицца, тесто",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 58,
+            "logo": "logo-corner-58.png",
+            "rest": "Valiko Хлеб",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 79,
+            "logo": "logo-corner-79.png",
+            "rest": "Veганутые",
+            "concept": "Здоровая еда",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 87,
+            "logo": "logo-corner-87.png",
+            "rest": "Zielinski&Rozen",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 16,
+            "logo": "logo-corner-16.png",
+            "rest": "Бакинский уголок",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 23,
+            "logo": "logo-corner-23.png",
+            "rest": "Бочковой Эль и Британские Пироги",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 7,
+            "logo": "logo-corner-7.png",
+            "rest": "Бэтмен и узбеки",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 235,
+            "logo": "logo-corner-35-2.png",
+            "rest": "Главный бар",
+            "concept": "Напитки",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 76,
+            "logo": "logo-corner-76.png",
+            "rest": "Кафе-кондитерская Жемчуга",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 17,
+            "logo": "logo-corner-17.png",
+            "rest": "Ламянь",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 672,
+            "logo": "logo-corner-67-1.png",
+            "rest": "Любовь и сладости семейная кондитерская",
+            "concept": "Сладкое",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 8,
+            "logo": "logo-corner-8.png",
+            "rest": "Марокко",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 42,
+            "logo": "logo-corner-42.png",
+            "rest": "Нахлебник Бургер Бар",
+            "concept": "Бургеры",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 81,
+            "logo": "logo-corner-81.png",
+            "rest": "Оджахури Кулинарная Лавка5",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 1,
+            "logo": "logo-corner-1.png",
+            "rest": "Припёк",
+            "concept": "Пицца, тесто",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 13,
+            "logo": "logo-corner-13.png",
+            "rest": "Раменичная by [KU:]",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 51,
+            "logo": "logo-corner-51.png",
+            "rest": "Рыба Моя Market",
+            "concept": "Рыба, суши",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 52,
+            "logo": "logo-corner-52.png",
+            "rest": "Рыба Моя Street Food",
+            "concept": "Рыба, суши",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 50,
+            "logo": "logo-corner-50.png",
+            "rest": "Сокровища морей",
+            "concept": "Рыба, суши",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 2,
+            "logo": "logo-corner-2.png",
+            "rest": "Такорама",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 57,
+            "logo": "logo-corner-57.png",
+            "rest": "Тар тар",
+            "concept": "Мясо",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 27,
+            "logo": "logo-corner-27.png",
+            "rest": "Три утки",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 12,
+            "logo": "logo-corner-12.png",
+            "rest": "Хелоу пипл!",
+            "concept": "Кухни мира",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 53,
+            "logo": "logo-corner-53.png",
+            "rest": "Чилим Seafood",
+            "concept": "Рыба, суши",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        },
+        {
+      "id": 39,
+            "logo": "logo-corner-39.png",
+            "rest": "Шеф Burger & Doner",
+            "concept": "Мясо",
+            "address": "Чижовское водохранилище",
+            "kitchen": "Казахская",
+            "chif": "АГЛ"
+        }
+      ]
